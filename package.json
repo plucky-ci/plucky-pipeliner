@@ -1,0 +1,19 @@
+{
+  "name": "pipeliner",
+  "version": "1.0.0",
+  "description": "Core package to manage process pipelines and execution.",
+  "main": "pipeline.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "lab"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "code": "^4.0.0",
+    "lab": "^11.1.0",
+    "mongo-bout": "0.0.3"
+  }
+}

@@ -1,19 +1,33 @@
 {
-  "name": "pipeliner",
-  "version": "1.0.0",
+  "name": "plucky-pipeliner",
+  "version": "0.0.1",
   "description": "Core package to manage process pipelines and execution.",
   "main": "pipeline.js",
   "directories": {
+    "example": "examples",
     "test": "test"
   },
   "scripts": {
     "test": "lab"
   },
-  "author": "",
+  "author": "Jeremy Darling <jeremy.darling@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "code": "^4.0.0",
     "lab": "^11.1.0",
     "mongo-bout": "0.0.3"
-  }
+  },
+  "dependencies": {
+    "code": "^4.0.0",
+    "lab": "^11.1.0",
+    "mongo-bout": "^0.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plucky-ci/plucky-pipeliner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/plucky-ci/plucky-pipeliner/issues"
+  },
+  "homepage": "https://github.com/plucky-ci/plucky-pipeliner#readme"
 }

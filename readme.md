@@ -116,9 +116,12 @@ const {
 } = require('plucky-pipeliner');
 
 class WootTask extends Task{
-  static params{
-    status: String
+  static get params(){
+    return {
+      status: String
+    }
   }
+
   handler(state, next){
     const {
       params = {},

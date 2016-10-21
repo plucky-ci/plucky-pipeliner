@@ -1,6 +1,6 @@
 {
   "name": "plucky-pipeliner",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Core package to manage process pipelines and execution.",
   "main": "pipeline.js",
   "directories": {

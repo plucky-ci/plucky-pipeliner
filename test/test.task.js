@@ -14,7 +14,7 @@ const {
 
 const noop = ()=>{};
 
-describe('ValidateTask', ()=>{
+describe('Task', ()=>{
   class MyTask extends Task{
     constructor(args){
       super(args);

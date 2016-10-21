@@ -119,7 +119,14 @@ class WootTask extends Task{
   static get params(){
     return {
       status: String
-    }
+    };
+    // or
+    return {
+      status: {
+        type: String,
+        description: 'If present returns "[params.status] Woot", otherwise returns "Woot"'
+      }
+    };
   }
 
   handler(state, next){

@@ -113,9 +113,12 @@ See examples folder, but here is a quick sample:
 const {
   ProcessHandler,
   Task,
-} = require('../');
+} = require('plucky-pipeliner');
 
 class WootTask extends Task{
+  static params{
+    status: String
+  }
   handler(state, next){
     const {
       params = {},

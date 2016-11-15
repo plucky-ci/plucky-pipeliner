@@ -10,7 +10,7 @@ class ConditionalTask extends Task{
   // This is probably wrong LOL
   execute(state, next){
     const pipeline = state.pipelineHandler;
-    if(state.lastCode[state.lastCode.length-1] !== 0){
+    if(state.lastCode !== 0){
       const process = pipeline.clone({process: state.config.lastFailed});
       return process.execute(state, next);
     }

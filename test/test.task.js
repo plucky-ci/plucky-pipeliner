@@ -48,7 +48,7 @@ describe('Task', ()=>{
 
   it('custom tasks handlers can return values', (done)=>{
     const t = new MyTask();
-    t.execute({lastCode: 0}, (code, val)=>{
+    t.execute({lastCode: [0]}, (code, val)=>{
       expect(code).to.equal(0);
       expect(val).to.equal({status: 'Success'});
       done();
@@ -57,7 +57,7 @@ describe('Task', ()=>{
 
   it('skips the handler if the lastCode is not 0', (done)=>{
     const t = new MyTask();
-    t.execute({lastCode: 1}, (code, val)=>{
+    t.execute({lastCode: [1]}, (code, val)=>{
       expect(code).to.equal(1);
       expect(val).to.be.null();
       done();
